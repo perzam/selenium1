@@ -1,0 +1,81 @@
+{
+  "id": "537ee7cc-fd52-4652-ae93-3bf9f79e004c",
+  "version": "2.0",
+  "name": "perzam1",
+  "url": "http://www.perzam.com.co",
+  "tests": [{
+    "id": "4f5874f3-1b81-427c-a73b-6f3c31275000",
+    "name": "perzam1",
+    "commands": [{
+      "id": "1a645076-8156-442c-8251-9c1ab2a67b08",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f730f02f-4357-45cb-9413-260c825a6d14",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c79e94b0-8c02-4cc8-888d-14e14c7651d8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=IBM installation manager",
+      "targets": [
+        ["linkText=IBM installation manager", "linkText"],
+        ["css=#post-103 .entry-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'IBM installation manager')]", "xpath:link"],
+        ["xpath=//article[@id='post-103']/header/h2/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://www.perzam.com.co/?p=103'])[3]", "xpath:href"],
+        ["xpath=//article[3]/header/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'IBM installation manager')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01941eba-9821-490a-ac33-76550e577e57",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7c93bd5-e8be-4ff3-8b4f-7f52e2c896f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-large-play-button",
+      "targets": [
+        ["css=.ytp-large-play-button", "css:finder"],
+        ["xpath=//div[@id='player_uid_292777017_1']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9e68d4b-f945-421f-b74f-9790055cc0b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='player_uid_292777017_1']/div[23]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8aacdff9-cfef-47d0-96c5-ea0ecfff2194",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4f5874f3-1b81-427c-a73b-6f3c31275000"]
+  }],
+  "urls": ["http://www.perzam.com.co/"],
+  "plugins": []
+}
